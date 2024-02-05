@@ -39,9 +39,9 @@ function playGame(){
         const result = playRound(playerSelection, computerSelection);
         console.log(result);
 
-        if (result.includes('Win')) {
+        if (result.includes('You Win')) {
             playerScore++;
-        } else if (result.includes('Lose')) {
+        } else if (result.includes('You Lose')) {
             computerScore++;
         }
     }
@@ -53,4 +53,4 @@ function playGame(){
         console.log(`The game is a tie with a score of ${playerScore}-${computerScore}.`);
     }
 }
-// playGame();
+playGame();
